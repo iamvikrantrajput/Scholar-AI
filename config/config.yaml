@@ -1,0 +1,6 @@
+# Configuration file for AI Research Assistant
+app:
+  name: "AI Research Assistant"
+  version: "0.1.0"
+
+# Add your configuration settings here
