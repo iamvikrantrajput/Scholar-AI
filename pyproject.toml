@@ -1,24 +1,30 @@
-[project]
-name = "ai-research-assistant"
+[tool.poetry]
+name = "scholar-ai"
 version = "0.1.0"
-description = ""
-authors = [
-    {name = "Vikrant Rajput",email = "iamvikranrajput@gmail.com"}
-]
+description = "ScholarAI - AI-powered research assistant for academic papers"
+authors = ["Vikrant Rajput <iamvikranrajput@gmail.com>"]
 readme = "README.md"
-requires-python = ">=3.10,<4.0"
-dependencies = [
-    "streamlit (>=1.47.1,<2.0.0)",
-    "pymupdf (>=1.26.3,<2.0.0)",
-    "langchain (>=0.3.27,<0.4.0)",
-    "faiss-cpu (>=1.11.0.post1,<2.0.0)",
-    "openai (>=1.97.1,<2.0.0)",
-    "python-dotenv (>=1.1.1,<2.0.0)",
-    "tqdm (>=4.67.1,<5.0.0)",
-    "sentence-transformers (>=5.0.0,<6.0.0)",
-    "unstructured (>=0.18.11,<0.19.0)",
-    "cohere (>=5.16.1,<6.0.0)"
-]
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+streamlit = ">=1.47.1,<2.0.0"
+pymupdf = ">=1.26.3,<2.0.0"
+langchain = ">=0.3.27,<0.4.0"
+faiss-cpu = ">=1.11.0.post1,<2.0.0"
+openai = ">=1.97.1,<2.0.0"
+python-dotenv = ">=1.1.1,<2.0.0"
+tqdm = ">=4.67.1,<5.0.0"
+sentence-transformers = ">=5.0.0,<6.0.0"
+unstructured = ">=0.18.11,<0.19.0"
+cohere = ">=5.16.1,<6.0.0"
+chromadb = ">=1.0.15,<2.0.0"
+langchain-community = ">=0.3.27,<0.4.0"
+langchain-openai = ">=0.3.28,<0.4.0"
+langchain-huggingface = ">=0.3.1,<0.4.0"
+pytest = ">=8.0.0,<9.0.0"
+pytest-asyncio = ">=0.24.0,<0.25.0"
+pytest-cov = ">=6.0.0,<7.0.0"
 
 
 [build-system]

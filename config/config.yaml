@@ -1,6 +1,6 @@
-# Configuration file for AI Research Assistant
+# Configuration file for ScholarAI
 app:
-  name: "AI Research Assistant"
+  name: "ScholarAI"
   version: "0.1.0"
 
 # Add your configuration settings here
